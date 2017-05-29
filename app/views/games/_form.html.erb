@@ -1,0 +1,53 @@
+<%= form_for(@game) do |f| %>
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% @game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :pictureUrl %><br>
+    <%= f.text_field :pictureUrl %>
+  </div>
+  <div class="field">
+    <%= f.label :highOne %><br>
+    <%= f.number_field :highOne %>
+  </div>
+  <div class="field">
+    <%= f.label :highTwo %><br>
+    <%= f.number_field :highTwo %>
+  </div>
+  <div class="field">
+    <%= f.label :highThree %><br>
+    <%= f.number_field :highThree %>
+  </div>
+  <div class="field">
+    <%= f.label :highFour %><br>
+    <%= f.number_field :highFour %>
+  </div>
+  <div class="field">
+    <%= f.label :highFive %><br>
+    <%= f.number_field :highFive %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

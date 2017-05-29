@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  url: MyString
+  description: MyString
+  pictureUrl: MyString
+  highOne: 1
+  highTwo: 1
+  highThree: 1
+  highFour: 1
+  highFive: 1
+
+two:
+  name: MyString
+  url: MyString
+  description: MyString
+  pictureUrl: MyString
+  highOne: 1
+  highTwo: 1
+  highThree: 1
+  highFour: 1
+  highFive: 1

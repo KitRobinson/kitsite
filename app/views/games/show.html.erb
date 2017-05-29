@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @game.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @game.url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @game.description %>
+</p>
+
+<p>
+  <strong>Pictureurl:</strong>
+  <%= @game.pictureUrl %>
+</p>
+
+<p>
+  <strong>Highone:</strong>
+  <%= @game.highOne %>
+</p>
+
+<p>
+  <strong>Hightwo:</strong>
+  <%= @game.highTwo %>
+</p>
+
+<p>
+  <strong>Highthree:</strong>
+  <%= @game.highThree %>
+</p>
+
+<p>
+  <strong>Highfour:</strong>
+  <%= @game.highFour %>
+</p>
+
+<p>
+  <strong>Highfive:</strong>
+  <%= @game.highFive %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

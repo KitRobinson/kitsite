@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.userName %>
+</p>
+
+<p>
+  <strong>Pswrdhash:</strong>
+  <%= @user.pswrdHash %>
+</p>
+
+<p>
+  <strong>Accesslevel:</strong>
+  <%= @user.accessLevel %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
