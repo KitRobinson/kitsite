@@ -4,7 +4,13 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+#convert to postgresql for heroku deploy
+gem 'pg'
+
+#heroku likes puma, which is multithreaded
+gem 'puma'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,7 +32,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-# add aws for the bucket
 gem 'aws-sdk', '~> 2'
 # Use Unicorn as the app server
 # gem 'unicorn'
